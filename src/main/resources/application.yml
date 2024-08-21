@@ -18,7 +18,7 @@ database:
     name: ${DATABASE_NAME:sandbox_client}
 
 registry_service:
-  url: ${REGISTRY_URL:registry.ossverse.com/subscribers/}
+  url: ${REGISTRY_URL:https://beckn-one.succinct.in/subscribers/}
   retry:
     max_attempts: ${REGISTRY_RETRY_MAX_ATTEMPTS:3}
     initial_interval_in_millis: ${REGISTRY_RETRY_INTERVAL:1000}
@@ -41,7 +41,7 @@ gateway_service:
     read_in_seconds: ${GATEWAY_READ_TIMEOUT:10}
     write_in_seconds: ${GATEWAY_WRITE_TIMEOUT:10}
 bpp_registry_service:
-  url: ${BPP_URL:registry.ossverse.com/subscribers/}
+  url: ${BPP_URL:https://beckn-one.succinct.in/subscribers/}
 bpp_service:
   retry:
     max_attempts: ${BPP_RETRY_MAX_ATTEMPTS:3}
@@ -65,10 +65,10 @@ protocol_service:
     write_in_seconds: ${PROTOCOL_HELPER_WRITE_TIMEOUT:5}
 
 context:
-  domain: ${BAP_DOMAIN:hello}
+  domain: ${BAP_DOMAIN:nic2004:52110}
   city: ${BAP_CITY_CODE:std:080}
   country: ${BAP_COUNTRY_CODE:IND}
-  bap_id: ${BAP_ID:bapsid1.ossverse.com}
+  bap_id: ${BAP_ID:box.beckn.org}
   bap_uri: ${BAP_URL:http://localhost:9002/protocol/v1}
   ttl_seconds: ${BAP_TTL:20}
 
